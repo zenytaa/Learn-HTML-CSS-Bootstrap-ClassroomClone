@@ -72,53 +72,6 @@ button {
   /* background-color: green; */
 }
 
-.container-card {
-  display: flex;
-  /* background-color: red; */
-  justify-content: start;
-}
-
-.card-content {
-  /* border: 2px dashed blue; */
-  min-height: 300px;
-  max-width: 300px;
-  width: 300px;
-  margin-bottom: 30px;
-  padding: 0px;
-}
-
-.title-class {
-  height: 100px;
-  width: 100%;
-  padding: 0px;
-  margin: 0;
-  position: relative;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  color: white;
-}
-
-.top-left {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 2px;
-  left: 15px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: -40px;
-  right: 15px;
-}
-
 .background-class {
   height: 100px;
   width: 100%;
