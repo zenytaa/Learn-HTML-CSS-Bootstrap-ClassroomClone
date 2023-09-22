@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  padding: 5px 30px;
+  /* background-color: aqua; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .brand {
+  display: flex;
+  /* border: dashed #666; */
+  align-items: center;
+  gap: 20px;
+}
+
+.brand h1 {
+  font-size: 1;
+}
+
+nav .menu-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.button-custom {
+  width: 95%;
+  position: relative;
+  padding-left: 0px;
+}
+
+.button-custom:hover {
+  background-color: #e6e5e5;
+}
+
+.nav-link {
+  text-align: left;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* border: 5px dashed brown; */
+}
+
+.container-content {
+  display: flex;
+  padding: 30px;
+  /* border: 4px dashed #000; */
+  /* background-color: green; */
+}
+
+.container-card {
+  display: flex;
+  /* background-color: red; */
+  justify-content: start;
+}
+
+.card-content {
+  /* border: 2px dashed blue; */
+  min-height: 300px;
+  max-width: 300px;
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+.title-class {
+  height: 100px;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -40px;
+  right: 15px;
+}
+
+.lecture-profile {
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.background-class {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
