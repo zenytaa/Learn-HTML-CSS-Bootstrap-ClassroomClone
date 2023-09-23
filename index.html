@@ -15,26 +15,23 @@
   <!-- HEADER -->
   <section id="header">
     <nav class="navbar bg-body-tertiary">
-      <div class="px-2 navbar-brand">
-        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=" #sidebar">
+      <div class="px-3 navbar-brand">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=" #sidebar">
           <img src="./assets/img/hamburg-menu.svg" height="28px" class="mb-2">
         </button>
         <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">
           <img src="./assets/img/google-classroom_720307.png" height="30px" class="mb-2 pe-2">
         </a>
-        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark fs-3">
+        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark fs-4">
           Classroom
         </a>
-        <!-- <span class="navbar-text">
-          Navbar text with an inline element
-        </span> -->
       </div>
       <div class="row me-2 p-0">
         <div>
-          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="...">
+          <button class="btn button-hide" type="button" data-bs-toggle="collapse" data-bs-target="...">
             <img src="./assets/img/plus-button.svg" height="28px" class="mb-2">
           </button>
-          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="...">
+          <button class="btn button-hide" type="button" data-bs-toggle="collapse" data-bs-target="...">
             <img src="./assets/img/waffle-menu.svg" height="28px" class="mb-2">
           </button>
           <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="...">
@@ -45,20 +42,20 @@
     </nav>
   </section>
 
-  <!-- SIDEBAR -->
-  <section id="content">
-    <div class="container-main">
-      <section id="sidebar">
-        <div class="d-flex flex-column flex-shrink-0 pe-3 pt-2 bg-body-light" style="width: 300px;">
+  <section class="sidebar-card">
+    <!-- SIDEBAR -->
+    <div class="d-flex">
+      <div class="ms-2" id="sidebar">
+        <div class="d-flex flex-column flex-shrink-0 pe-3 pt-2 bg-body-light" style="width: 300px; height: 100vh\;">
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item  mb-2" style="width: 100%;">
               <button class="button-custom btn btn-outline-light" type="button">
                 <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-house-door-fill"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
-                  </svg> -->
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                        </svg> -->
                   Home
                 </a>
               </button>
@@ -77,7 +74,7 @@
             <hr style="margin-top: 8px; margin-bottom: 8px" />
             <li class="nav-item " style="width: 100%;">
               <button class="button-custom btn btn-outline-light" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseTeaching">
+                data-bs-target="#multiCollapseTeaching" aria-expanded="false" aria-controls="#multiCollapseTeaching">
                 <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
                   <!-- icon -->
                   <path
@@ -87,24 +84,21 @@
                 </a>
               </button>
             </li>
-            <div class="col " style="width: 95%;">
-              <div class="row">
-                <div class="collapse multi-collapse" id="multiCollapseTeaching">
-                  <button class="button-custom btn btn-outline-light text-secondary-emphasis" type="button">
-                    <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
-                      To Review
-                    </a>
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="collapse multi-collapse" id="multiCollapseTeaching">
-                  <button class="button-custom btn btn-outline-light text-secondary-emphasis" type="button">
-                    <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
-                      Your teaching class
-                    </a>
-                  </button>
-                </div>
+            <!-- sub sidebar teaching-->
+            <div class="d-flex flex-column flex-shrink-0  bg-body-light">
+              <div class="collapse multi-collapse" id="multiCollapseTeaching">
+                <button class="button-custom btn btn-outline-light">
+                  <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
+                    <!-- icon -->
+                    To review
+                  </a>
+                </button>
+                <button class="button-custom btn btn-outline-light">
+                  <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
+                    <!-- icon -->
+                    Teaching class
+                  </a>
+                </button>
               </div>
             </div>
             <hr style="margin-top: 8px; margin-bottom: 8px" />
@@ -117,44 +111,38 @@
                 </a>
               </button>
             </li>
-            <div class="col " style="width: 95%;">
-              <div class="row">
-                <div class="collapse multi-collapse" id="multiCollapseEnrolled">
-                  <button class="button-custom btn btn-outline-light text-secondary-emphasis" type="button">
-                    <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
-                      To Do
-                    </a>
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="collapse multi-collapse" id="multiCollapseEnrolled">
-                  <button class="button-custom btn btn-outline-light text-secondary-emphasis" type="button">
-                    <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
-                      Your class
-                    </a>
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="collapse multi-collapse" id="multiCollapseEnrolled">
-                  <button class="button-custom btn btn-outline-light text-secondary-emphasis" type="button">
-                    <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
-                      Your class
-                    </a>
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="collapse multi-collapse" id="multiCollapseEnrolled">
-                  <button class="button-custom btn btn-outline-light text-secondary-emphasis" type="button">
-                    <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
-                      Your class
-                    </a>
-                  </button>
-                </div>
+            <!-- end sub sidebar teaching -->
+
+            <!-- sub sidebar enrolled -->
+            <div class="d-flex flex-column flex-shrink-0  bg-body-light">
+              <div class="collapse multi-collapse" id="multiCollapseEnrolled">
+                <button class="button-custom btn btn-outline-light">
+                  <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
+                    <!-- icon -->
+                    To do
+                  </a>
+                </button>
+                <button class="button-custom btn btn-outline-light">
+                  <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
+                    <!-- icon -->
+                    Class 1
+                  </a>
+                </button>
+                <button class="button-custom btn btn-outline-light">
+                  <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
+                    <!-- icon -->
+                    Class 2
+                  </a>
+                </button>
+                <button class="button-custom btn btn-outline-light">
+                  <a href="#" class="nav-link link-secondary link-underline-opacity-0 " aria-current="page">
+                    <!-- icon -->
+                    Class 3
+                  </a>
+                </button>
               </div>
             </div>
+
             <hr style="margin-top: 8px; margin-bottom: 8px" />
             <li class="nav-item  mb-2" style="width: 100%;">
               <button class="button-custom btn btn-outline-light" type="button">
@@ -174,18 +162,15 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- END Sidebar -->
+      </div>
+      <!-- END SIDEBAR -->
 
-      <!-- CARD  -->
-
-      <div class="container p-2 me-5 ">
-        <div class="row p-0 m-0">
-          <!-- CARD 1 -->
-          <div class="col-md-6 col-xl-4 my-3">
-            <div class="card p-0" style=" width: 300px; height: 300px;">
-              <div class="position-relative bg-body-secondary">
-                <img src="./assets/img/subject_backgroud.svg" class="background-class">
+      <div class="container m-3">
+        <div class="row me-3">
+          <div class="col mb-2">
+            <div class="card" style="width: 300px; height: 300px;">
+              <div class="position-relative">
+                <img src="./assets/img/subject_backgroud.svg" class="background-class" alt="background subject">
                 <a href="#"
                   class="link-offset-2 link-underline link-underline-opacity-0 position-absolute top-0 start-0 p-2 fs-2 text-light ">
                   Physict
@@ -199,7 +184,6 @@
               </div>
               <div class="card-body">
                 <p class="card-text">
-
                 </p>
               </div>
               <div class="container position-relative">
@@ -218,11 +202,10 @@
               </div>
             </div>
           </div>
-          <!-- CARD 2 -->
-          <div class="col-md-6 col-xl-4 my-3">
-            <div class="card p-0" style=" width: 300px; height: 300px;">
-              <div class="position-relative bg-body-secondary">
-                <img src="./assets/img/subject_backgroud.svg" class="background-class">
+          <div class="col mb-2">
+            <div class="card" style="width: 300px; height: 300px;">
+              <div class="position-relative">
+                <img src="./assets/img/subject_backgroud.svg" class="background-class" alt="background subject">
                 <a href="#"
                   class="link-offset-2 link-underline link-underline-opacity-0 position-absolute top-0 start-0 p-2 fs-2 text-light ">
                   Physict
@@ -236,7 +219,6 @@
               </div>
               <div class="card-body">
                 <p class="card-text">
-
                 </p>
               </div>
               <div class="container position-relative">
@@ -246,7 +228,7 @@
                       <img src="./assets/img/card-open-work.svg" height="25px">
                     </a>
                   </div>
-                  <div class="col  m-0">
+                  <div class="col m-0">
                     <a href="#">
                       <img src="./assets/img/card-open-folder.svg" height="32px">
                     </a>
@@ -255,11 +237,10 @@
               </div>
             </div>
           </div>
-          <!-- CARD 3 -->
-          <div class="col-md-6 col-xl-4 my-3">
-            <div class="card p-0" style=" width: 300px; height: 300px;">
-              <div class="position-relative bg-body-secondary">
-                <img src="./assets/img/subject_backgroud.svg" class="background-class">
+          <div class="col mb-2">
+            <div class="card" style="width: 300px; height: 300px;">
+              <div class="position-relative">
+                <img src="./assets/img/subject_backgroud.svg" class="background-class" alt="background subject">
                 <a href="#"
                   class="link-offset-2 link-underline link-underline-opacity-0 position-absolute top-0 start-0 p-2 fs-2 text-light ">
                   Physict
@@ -273,7 +254,6 @@
               </div>
               <div class="card-body">
                 <p class="card-text">
-
                 </p>
               </div>
               <div class="container position-relative">
@@ -283,7 +263,7 @@
                       <img src="./assets/img/card-open-work.svg" height="25px">
                     </a>
                   </div>
-                  <div class="col  m-0">
+                  <div class="col m-0">
                     <a href="#">
                       <img src="./assets/img/card-open-folder.svg" height="32px">
                     </a>
@@ -292,50 +272,11 @@
               </div>
             </div>
           </div>
-          <!-- CARD 4 -->
-          <div class="col-md-6 col-xl-4 my-3">
-            <div class="card p-0" style=" width: 300px; height: 300px;">
-              <div class="position-relative bg-body-secondary">
-                <img src="./assets/img/subject_backgroud.svg" class="background-class">
-                <a href="#"
-                  class="link-offset-2 link-underline link-underline-opacity-0 position-absolute top-0 start-0 p-2 fs-2 text-light ">
-                  Physict
-                </a>
-                <a href="#"
-                  class="link-offset-2 link-underline link-underline-opacity-0 position-absolute bottom-0 start-0 ps-2 fs-4 text-light">
-                  Lecture
-                </a>
-                <img src="./assets/img/lecture.svg"
-                  class="rounded-circle pe-3 position-absolute top-100 end-0 translate-middle-y" height="60px">
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-
-                </p>
-              </div>
-              <div class="container position-relative">
-                <div class="p-2 row position-absolute bottom-0 end-0">
-                  <div class="col  m-0">
-                    <a href="#">
-                      <img src="./assets/img/card-open-work.svg" height="25px">
-                    </a>
-                  </div>
-                  <div class="col  m-0">
-                    <a href="#">
-                      <img src="./assets/img/card-open-folder.svg" height="32px">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 
     </div>
   </section>
-  <!-- END CARD -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
