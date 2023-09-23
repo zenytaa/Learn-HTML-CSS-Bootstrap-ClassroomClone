@@ -14,21 +14,33 @@
 <body>
   <!-- HEADER -->
   <section id="header">
-    <nav>
-      <div class="brand">
-        <img class="logo" src="./assets/img/google-classroom_720307.png" height="30px" />
-        <h2>Classroom</h2>
+    <nav class="navbar bg-body-tertiary">
+      <div class="px-2 navbar-brand">
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=" #sidebar">
+          <img src="./assets/img/hamburg-menu.svg" height="28px" class="mb-2">
+        </button>
+        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">
+          <img src="./assets/img/google-classroom_720307.png" height="30px" class="mb-2 pe-2">
+        </a>
+        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-dark fs-3">
+          Classroom
+        </a>
+        <!-- <span class="navbar-text">
+          Navbar text with an inline element
+        </span> -->
       </div>
-      <div class="menu-container">
-        <button class="menu create btn">
-          <img class="icon" src="./assets/img/plus_2997933.png" height="20px" />
-        </button>
-        <button class="menu apps btn">
-          <img class="icon" src="./assets/img/menu.png" height="20px" />
-        </button>
-        <button class="menu profile btn">
-          <img class="icon" src="./assets/img/lecture.svg" height="30px" />
-        </button>
+      <div class="row me-2 p-0">
+        <div>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="...">
+            <img src="./assets/img/plus-button.svg" height="28px" class="mb-2">
+          </button>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="...">
+            <img src="./assets/img/waffle-menu.svg" height="28px" class="mb-2">
+          </button>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="...">
+            <img src="./assets/img/lecture.svg" height="30px" class="mb-2 rounded-circle">
+          </button>
+        </div>
       </div>
     </nav>
   </section>

@@ -3,58 +3,6 @@
   margin: 0;
 }
 
-nav {
-  display: flex;
-  padding: 5px 30px;
-  /* background-color: aqua; */
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav .brand {
-  display: flex;
-  /* border: dashed #666; */
-  align-items: center;
-  gap: 20px;
-}
-
-.brand h1 {
-  font-size: 1;
-}
-
-nav .menu-container {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-button {
-  padding: 0;
-  margin: 0;
-}
-
-.icon {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.button-custom {
-  width: 95%;
-  position: relative;
-  padding-left: 0px;
-}
-
-.button-custom:hover {
-  background-color: #e6e5e5;
-}
-
-.nav-link {
-  text-align: left;
-}
-
 .container-main {
   display: flex;
   justify-content: space-between;
